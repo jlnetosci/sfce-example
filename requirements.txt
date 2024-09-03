@@ -1,2 +1,2 @@
 streamlit==1.32.2 
-st-flexible-status-elements==0.1.0
+st-flexible-callout-elements==0.1.0
