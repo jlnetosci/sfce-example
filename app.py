@@ -32,8 +32,8 @@ st.sidebar.title("Flexible callout elements")
 
 st.markdown("""
     <div style="text-align: justify;">
-        This is an example page for the <code>st-flexible-callout-elements</code> package. 
-        For details please read the documentation.
+        This is an example page for the <a href="https://pypi.org/project/st-flexible-callout-elements/" target="_blank"><code>st-flexible-callout-elements</code></a> library. 
+        For details please read the <a href="https://github.com/jlnetosci/st-flexible-callout-elements" target="_blank">documentation</a>.
     </div>
     """, unsafe_allow_html=True)
 
