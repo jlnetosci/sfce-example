@@ -2,6 +2,7 @@ import streamlit as st
 from st_flexible_callout_elements import flexible_error, flexible_success, flexible_warning, flexible_info, flexible_callout
 from streamlit_extras.add_vertical_space import add_vertical_space
 from time import sleep
+import st_flexible_callout_elements
 
 def display_rainbow_text():
     colors = [
@@ -75,6 +76,18 @@ with st.expander("See code"):
 
 add_vertical_space(1)
 
+flexible_callout("The boxes can be slimmer.", background_color="#f4dbd6", font_color="#dd7878", padding=5)
+with st.expander("See code"):
+    st.code('''flexible_callout("The boxes can be slimmer.", background_color="#f4dbd6", font_color="#dd7878", padding=5)''', language="python")
+
+add_vertical_space(1)
+
+flexible_callout("The disctance from the next element can also be changed.", background_color="#a6e3a1", font_color="#40a02b", margin_bottom=-5)
+with st.expander("See code"):
+    st.code('''flexible_callout("The disctance from the next element can also be changed.", background_color="#a6e3a1", font_color="#40a02b", margin_bottom=-5)''', language="python")
+
+add_vertical_space(1)
+
 display_rainbow_text()
 with st.expander("See code"):
     st.code("""def display_rainbow_text():
@@ -102,6 +115,26 @@ with st.expander("See code"):
                 )
 
 display_rainbow_text()""", language="python")
+
+add_vertical_space(1)
+
+st.write("After v0.2.0:")
+
+flexible_warning("You can also add icons to your elements. e.g., emojis,", icon="⚠️")
+with st.expander("See code"):
+    st.code("""flexible_warning("You can also add icons to your elements. e.g., emojis,", icon="⚠️"))""", language="python")
+
+add_vertical_space(1)
+
+flexible_success("or icons in the <a href='https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Rounded'>Material Symbols</a> font library.", icon=":material/check:")
+with st.expander("See code"):
+    st.code("""flexible_success("or icons in the <a href='https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Rounded'>Material Symbols</a> font library.", icon=":material/check:")""", language="python")
+
+add_vertical_space(1)
+
+flexible_info("You can also customize the size of the icon.", icon=":material/info:", icon_size=25)
+with st.expander("See code"):
+    st.code("""flexible_info("You can also customize the size of the icon.", icon=":material/info:", icon_size=25)""", language="python")
 
 st.sidebar.markdown("""
     <div style="text-align: justify;">
